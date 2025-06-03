@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Video</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        video {
+            max-width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls loop poster="poster.png">
+            <source src="myvideo.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+</body>
+</html>
